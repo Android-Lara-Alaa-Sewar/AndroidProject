@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="120dp">
 
     <TextView
         android:id="@+id/task_title"
@@ -19,21 +20,21 @@
         android:id="@+id/task_description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Task Description"
-        android:textSize="18sp"
-        android:textColor="@color/Cream"
+        android:layout_below="@+id/task_title"
         android:layout_marginStart="50dp"
-        android:layout_below="@+id/task_title" />
+        android:text="Task Description"
+        android:textColor="@color/Cream"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/task_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2023-11-14"
-        android:textSize="16sp"
-        android:textColor="@color/Cream"
+        android:layout_below="@+id/task_description"
         android:layout_marginStart="50dp"
-        android:layout_below="@+id/task_description" />
+        android:text="2023-11-14"
+        android:textColor="@color/Cream"
+        android:textSize="16sp" />
 
 
     <CheckBox
@@ -44,6 +45,7 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="-7dp"
         android:layout_marginLeft="16dp" />
+
     <ImageButton
         android:id="@+id/button_delete"
         android:layout_width="32dp"
@@ -52,19 +54,38 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="-7dp"
         android:layout_marginLeft="16dp"
-        android:background="@null"/>
+        android:background="@null"
+        android:contentDescription="Delete Task" />
+
     <Button
         android:id="@+id/button_complete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Incomplete"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="16dp"
         android:backgroundTint="@color/green"
-        android:textColor="@color/Cream"        />
+        android:text="Incomplete"
+        android:textColor="@color/Cream" />
 
-
+    <ImageButton
+        android:id="@+id/deletetask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/button_complete"
+        android:layout_alignBottom="@+id/task_description"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="-25dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="Delete Task"
+        android:src="@drawable/baseline_delete_24"
+        tools:ignore="ContentDescription" />
 
 
 </RelativeLayout>

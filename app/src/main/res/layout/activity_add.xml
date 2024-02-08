@@ -122,7 +122,7 @@
     <Button
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
-        android:layout_height="37dp"
+        android:layout_height="48dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/green"
@@ -131,8 +131,7 @@
         android:textSize="14sp"
 
 
-        android:textStyle="normal|bold"
-/>
+        android:textStyle="normal|bold" />
 
 
 </RelativeLayout>

@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
@@ -94,19 +95,17 @@ public class ListAdapter extends BaseAdapter {
                 notifyDataSetChanged();
             }
         });
-      /*  Button buttonDelete = view.findViewById(R.id.button_delete);
+        ImageButton  buttonDelete = view.findViewById(R.id.deletetask);
 
         buttonDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 taskList.removeTask(task);
-
                 taskList.saveTasks(context);
-
                 notifyDataSetChanged();
             }
         });
-*/
+
         return view;
     }
 

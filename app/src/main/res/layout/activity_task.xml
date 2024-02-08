@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="175dp"
-        android:layout_height="154dp"
+        android:layout_width="179dp"
+        android:layout_height="123dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:src="@drawable/logo" />
@@ -18,13 +18,12 @@
         style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/imageView10"
+        android:layout_centerHorizontal="true"
         android:text="My Tasks"
         android:textColor="@color/Cream"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal ="true"
-        android:layout_below="@id/imageView10"
-        />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button"
@@ -47,25 +46,24 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Task list is empty! 😄"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal ="true"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:text="Task list is empty! 😄"
         android:textColor="@color/Cream"
-        />
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Press the + button to create one "
-        android:textSize="16sp"
-        android:textColor="@color/Cream"
-
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+
+        android:text="Press the + button to create one "
+        android:textColor="@color/Cream"
+        android:textSize="16sp" />
 
     <ListView
         android:id="@+id/listView"
@@ -80,7 +78,7 @@
     <Button
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
-        android:layout_height="37dp"
+        android:layout_height="48dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/green"
