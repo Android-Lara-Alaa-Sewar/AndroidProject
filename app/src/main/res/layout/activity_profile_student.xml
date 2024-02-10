@@ -148,13 +148,12 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView7"
+            <EditText
+                android:id="@+id/EditTextName"
                 style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
                 android:layout_width="match_parent"
-                android:layout_height="33dp"
+                android:layout_height="40dp"
                 android:paddingStart="110dp"
-                android:text="Lara Anqawi"
                 android:textColor="#71B18D"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -167,15 +166,14 @@
                 app:cardCornerRadius="50dp"
                 app:cardElevation="30dp">
 
-                <TextView
-                    android:id="@+id/textView9"
+                <EditText
+                    android:id="@+id/editTextId"
                     style="@style/Widget.AppCompat.TextView.SpinnerItem"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="20dp"
-                    android:text="1202876"
                     android:textColor="@color/Cream"
-                    android:textSize="34sp"
+                    android:textSize="24sp"
                     android:textStyle="bold" />
             </androidx.cardview.widget.CardView>
 
@@ -242,7 +240,7 @@
                             android:ems="10"
                             android:inputType="number"
                             android:textSize="24sp"
-                            tools:text="80.4" />
+                             />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -277,7 +275,7 @@
                             android:ems="10"
                             android:inputType="number"
                             android:textSize="24sp"
-                            tools:text="110" />
+                            />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -311,8 +309,8 @@
                             android:layout_height="67dp"
                             android:ems="10"
                             android:inputType="textEmailAddress"
-                            android:textSize="12sp"
-                            tools:text="1202876@student.birzeit.edu" />
+                            android:textSize="20sp"
+                             />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -355,7 +353,7 @@
                             android:ems="10"
                             android:inputType="number"
                             android:textSize="24sp"
-                            tools:text="89.6" />
+                             />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -425,7 +423,7 @@
                             android:ems="10"
                             android:inputType="number"
                             android:textSize="24sp"
-                            tools:text="80.4" />
+                             />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

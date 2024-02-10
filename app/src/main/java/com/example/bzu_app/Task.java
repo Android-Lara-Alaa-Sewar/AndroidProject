@@ -35,6 +35,14 @@ public class Task {
     public boolean isCompleted() {
         return completed;
     }
+    // Task.java
+    public Date getJavaDate() {
+        if (date != null) {
+            return date.getTime(); // تحويل Calendar إلى Date
+        } else {
+            return null;
+        }
+    }
 
     public void setCompleted(boolean completed) {
         this.completed = completed;

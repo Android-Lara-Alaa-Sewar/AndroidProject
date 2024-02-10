@@ -10,6 +10,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.os.Bundle;
 
+
 public class Task_Activity extends AppCompatActivity {
 
 
@@ -68,6 +69,8 @@ public class Task_Activity extends AppCompatActivity {
         }
         listAdapter.updateTaskList(taskList);
         listAdapter.notifyDataSetChanged();
+
+
     }
 
 
