@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="354dp"-->
+    <!--        android:orientation="horizontal">-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="20dp">
+
+
+        <ImageView
+            android:id="@+id/recyclerImage"
+            android:layout_width="match_parent"
+            android:layout_height="294dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imagesuplode" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="30dp">
+
+        <TextView
+            android:id="@+id/recyclerCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:scrollbars="vertical"
+            android:text="caption"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:backgroundTint="#0A66AF"
+            android:button="@drawable/likefaviorut"
+            android:buttonTint="#0A66AF"
+            android:checked="false"
+            android:drawableTint="#0A66AF"
+            android:elevation="10dp"
+            app:useMaterialThemeColors="false" />
+
+        <!--        <com.like.LikeButton-->
+        <!--            android:id="@+id/thumbbutton1"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:circle_end_color="#0A66AF"-->
+        <!--            app:icon_size="42dp"-->
+        <!--            app:like_drawable="@drawable/thumb_on"-->
+        <!--          app:unlike_drawable="@drawable/thumb_off">-->
+    </LinearLayout>
+</LinearLayout>

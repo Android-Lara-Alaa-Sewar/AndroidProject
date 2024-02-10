@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "962117882474",
+    "firebase_url": "https://bzuapp-830db-default-rtdb.firebaseio.com",
+    "project_id": "bzuapp-830db",
+    "storage_bucket": "bzuapp-830db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962117882474:android:87b28229174a69013fb013",
+        "android_client_info": {
+          "package_name": "com.example.bzu_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFvc5DqsOFsX8jSyibp2iGN8wHQ4sPylA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
