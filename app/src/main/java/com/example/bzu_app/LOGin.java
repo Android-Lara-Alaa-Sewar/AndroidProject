@@ -134,5 +134,4 @@ public class LOGin extends AppCompatActivity {
         editor.putString(PASSWORD, name);
         editor.putBoolean(REMEMBER, true);
         editor.apply();
-
     }}

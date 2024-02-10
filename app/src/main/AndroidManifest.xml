@@ -49,6 +49,12 @@
             android:name=".Signup"
             android:exported="false" />
         <activity
+            android:name=".UploadNews"
+            android:exported="false" />
+        <activity
+            android:name=".UploadPublication"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
