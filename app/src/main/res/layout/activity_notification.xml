@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="179dp"
+        android:background="@null"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabAllNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Notification" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabTaskNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Notification" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabPostNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Notification" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="389dp"
+        android:layout_below="@id/tabLayout"
+        android:layout_marginTop="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="179dp"
+        android:layout_height="123dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView17"
+        style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView10"
+        android:layout_centerHorizontal="true"
+        android:text="Notification"
+        android:textColor="@color/Cream"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/green"
+        android:text="Back"
+        android:textColor="@color/Cream"
+        android:textSize="14sp"
+
+
+        android:textStyle="normal|bold"
+
+        />
+
+</RelativeLayout>

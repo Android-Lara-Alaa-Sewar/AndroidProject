@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class main extends AppCompatActivity {
 private CardView avg;
-private Button home,profile ,book , Notfication , Chat
+private Button home,profile ,book , Notfication , Chat, noti
          ;
 
     private CardView task, profilcard ,Bookcard  ;
@@ -28,6 +28,8 @@ private Button home,profile ,book , Notfication , Chat
         profilcard = findViewById(R.id.cardstudent);
         Bookcard = findViewById(R.id.cardcollege);
         book =findViewById(R.id.book_but);
+        noti =findViewById(R.id.noti_but);
+
         avg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,6 +49,13 @@ private Button home,profile ,book , Notfication , Chat
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(main.this,main.class);
+                startActivity(intent);
+            }
+        });
+        noti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(main.this,Notification.class);
                 startActivity(intent);
             }
         });

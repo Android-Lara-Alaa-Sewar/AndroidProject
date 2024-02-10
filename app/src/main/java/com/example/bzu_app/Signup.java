@@ -13,19 +13,24 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Signup extends AppCompatActivity {
-    private TextView NAme ,Pass  , CPass;
+    private TextView NAme ,Pass  , CPass, ID,Email;
     private Button SignUp;
 
     private static final String SPref1 = "MyPrefs";
     private static final String USERNAME1 = "username";
     private static final String PASSWORD1 = "password";
+    private static final String ID1 = "id";
+    private static final String EMAIL = "email";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        NAme =findViewById(R.id.loginId);
+        ID = findViewById(R.id.loginId);
+        NAme =findViewById(R.id.loginname);
+        Email =findViewById(R.id.loginemail);
+
         Pass = findViewById(R.id.loginPass);
         CPass = findViewById(R.id.confirmpass);
         SignUp = findViewById(R.id.but_login);
@@ -41,11 +46,14 @@ public class Signup extends AppCompatActivity {
 
     private void signUp() {
         String username = NAme.getText().toString();
+        String email = Email.getText().toString();
+
         String password = Pass.getText().toString();
         String Cpassword = CPass.getText().toString();
+        String id = ID.getText().toString();
 
         if (password.equals(Cpassword)){
-            saveUserDetails(username, password,Cpassword);
+            saveUserDetails(username, password, Cpassword, id,email); // قم بإرسال الـ ID إلى الدالة
             Toast.makeText(this, "Sign Up successful", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(Signup.this, main.class);
             startActivity(intent);
@@ -54,13 +62,16 @@ public class Signup extends AppCompatActivity {
     }
 
 
-    private void saveUserDetails(String username, String password,String CPassword) {
+    private void saveUserDetails(String username, String password, String CPassword, String id ,String email) {
         SharedPreferences sharedPreferences = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
 
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
         editor.putString("username", username);
+        editor.putString("email", email);
+
         editor.putString("password", password);
+        editor.putString("id", id);
         editor.apply();
     }
 
@@ -83,13 +94,17 @@ public class Signup extends AppCompatActivity {
 
         SharedPreferences sharedPreferences = getSharedPreferences(SPref1, Context.MODE_PRIVATE);
         String savedUsername = sharedPreferences.getString(USERNAME1, "");
+        String savedEmail = sharedPreferences.getString(EMAIL, "");
+
         String savedPassword = sharedPreferences.getString(PASSWORD1, "");
+        String savedID = sharedPreferences.getString(ID1, ""); // استرداد الـ ID هنا
 
         NAme.setText(savedUsername);
         Pass.setText(savedPassword);
         CPass.setText(savedPassword);
+        ID.setText(savedID);
+        Email.setText(savedEmail);
     }
-
 
 
 }
