@@ -54,13 +54,13 @@ public class profileStudent extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Chat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(profileStudent.this, main.class);
-                startActivity(intent);
-            }
-        });
+//        Chat.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(profileStudent.this, main.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
         Notfication.setOnClickListener(new View.OnClickListener() {

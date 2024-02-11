@@ -19,7 +19,7 @@ public class collegewelc extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(collegewelc.this, chatwelc.class);
+                Intent intent = new Intent(collegewelc.this, averagewelc.class);
                 startActivity(intent);
             }
         });

@@ -234,7 +234,7 @@
             android:layout_margin="5dp"
             android:layout_marginStart="20dp"
             android:paddingStart="40dp"
-            android:text="Chat Page"
+            android:text="favorite list"
             android:textColor="@color/Cream"
             android:textStyle="bold" />
 
@@ -243,7 +243,7 @@
             android:layout_width="match_parent"
             android:layout_height="144dp"
             android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/chatt2" />
+            app:srcCompat="@drawable/favlist" />
 
     </androidx.cardview.widget.CardView>
 
